@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexis Chialram - Nursing Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">Alexis Chialram</div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Welcome</h1>
+            <p>My name is Alexis Chialram and I'm a dedicated nursing student.</p>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nursing student">
+            </div>
+            <div class="hero-buttons">
+                <a href="#about" class="hero-btn">About Me</a>
+                <a href="#education" class="hero-btn">Education</a>
+                <a href="#experience" class="hero-btn">Experience</a>
+                <a href="#contact" class="hero-btn">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Student Nurse</h3>
+                    <p>I am passionate about providing compassionate care to patients and continuously expanding my medical knowledge. My goal is to make a positive impact in healthcare through evidence-based practice and patient-centered care.</p>
+                    <p>Throughout my academic journey, I've developed strong clinical skills and a deep understanding of nursing principles. I thrive in fast-paced environments and am committed to lifelong learning in the medical field.</p>
+                    <p>My approach combines technical expertise with emotional intelligence to deliver holistic care that addresses both physical and emotional needs.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Alexis Chialram portrait">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <i class="fas fa-university education-icon"></i>
+                <h3>Bachelor of Science in Nursing</h3>
+                <p>University of New Brunswick</p>
+                <p>Expected Graduation: May 2025</p>
+                <p class="gpa">GPA: 3.5</p>
+                <p>Relevant Coursework: Anatomy & Physiology, Pharmacology, Nursing Ethics, Clinical Practice, Emergency Care, Pediatric Nursing</p>
+            </div>
+            <div class="education-item">
+                <i class="fas fa-certificate education-icon"></i>
+                <h3>Certifications</h3>
+                <p>Basic Life Support (BLS) Certification</p>
+                <p>Advanced Cardiac Life Support (ACLS) Certification</p>
+                <p>Pediatric Advanced Life Support (PALS) Certification</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <i class="fas fa-hospital experience-icon"></i>
+                    <h3>Student Nurse</h3>
+                    <p>Royal Medical Center</p>
+                    <p>Clinical rotations in various departments including emergency, labor and delivery, and general medicine. Assisted in patient assessments, medication administration, and treatment procedures.</p>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-user-nurse experience-icon"></i>
+                    <h3>Nursing Assistant</h3>
+                    <p>Burnstead Health</p>
+                    <p>Provided basic patient care and assisted registered nurses with daily tasks and procedures. Monitored vital signs, assisted with personal hygiene, and documented patient information.</p>
+                </div>
+                <div class="experience-item">
+                    <i class="fas fa-hands-helping experience-icon"></i>
+                    <h3>Volunteer</h3>
+                    <p>BYABH Students' Association</p>
+                    <p>Participated in health awareness campaigns and community outreach programs. Organized blood drives and health screenings for underserved populations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p>&copy; 2025 Alexis Chialram. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
