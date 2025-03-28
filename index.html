@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexis Chialram - Nursing Student</title>
+    <title>Alexis Chiu - Nursing Student</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <!-- Header -->
     <header id="header">
         <div class="container">
             <nav>
-                <div class="logo">Alexis Chialram</div>
+                <div class="logo">Alexis Chiu</div>
                 <div class="hamburger" id="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -25,6 +26,13 @@
                     <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
+
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+              </button>
+
         </div>
     </header>
 
@@ -32,7 +40,7 @@
     <section class="hero">
         <div class="container hero-content">
             <h1>Welcome</h1>
-            <p>My name is Alexis Chialram and I'm a dedicated nursing student.</p>
+            <p>My name is Alexis Chiu and I'm a dedicated nursing student.</p>
             <div class="hero-image">
                 <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nursing student">
             </div>
@@ -78,9 +86,9 @@
             <div class="education-item">
                 <i class="fas fa-certificate education-icon"></i>
                 <h3>Certifications</h3>
-                <p>Basic Life Support (BLS) Certification</p>
-                <p>Advanced Cardiac Life Support (ACLS) Certification</p>
-                <p>Pediatric Advanced Life Support (PALS) Certification</p>
+                <p><a href="https://www.redcross.org/take-a-class/bls-training/bls-certification?srsltid=AfmBOoqbJ2k2_MzxEXuE1IzJrH0f4xzSTX1xwyNnes6AuC5y-re21bwK">Basic Life Support (BLS) Certification</a></p>
+                <p><a href="https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/acls">Cardiac Life Support (ACLS) Certification</a></p>
+                <p><a href="https://www.redcross.org/take-a-class/als-and-pals/pals-certification?srsltid=AfmBOopEwSCqbhpNIBpTQKCPuPOd8ICvZ-pnmaZHt_VFEQ1BYTB09vOl">Advanced Life Support (PALS) Certification</a></p>
             </div>
         </div>
     </section>
@@ -171,5 +179,9 @@
             });
         });
     </script>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </body>
 </html>
