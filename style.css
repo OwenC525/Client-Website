@@ -129,23 +129,81 @@
         color: var(--primary);
     }
 
-    .nav-toggle-btn .line {
-        width: 30px;
-        height: 2px;
-        background-color: var(--black);
-        transition: var(--transition);
-      }
-      
-      .nav-toggle-btn .line:not(:last-child) { margin-block-end: 8px; }
-      
-      .nav-toggle-btn.active .line-1 { transform: translateY(10px) rotate(45deg); }
-      
-      .nav-toggle-btn.active .line-2 {
-        transform: translateX(-100%);
+    /* Mobile Menu Styles */
+.nav-toggle-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.nav-toggle-btn .line {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: var(--dark);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .nav-toggle-btn {
+        display: block;
+        margin-left: auto;
+    }
+    
+    .navbar-list {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+    
+    .navbar-list.active {
+        right: 0;
+    }
+    
+    .nav-toggle-btn.active .line-1 {
+        transform: translateY(7px) rotate(45deg);
+    }
+    
+    .nav-toggle-btn.active .line-2 {
         opacity: 0;
-      }
-      
-      .nav-toggle-btn.active .line-3 { transform: translateY(-10px) rotate(-45deg); }
+    }
+    
+    .nav-toggle-btn.active .line-3 {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    /* Prevent scrolling when menu is open */
+    body.nav-active {
+        overflow: hidden;
+    }
+}
     
     /* Hero Section */
     .hero {

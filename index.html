@@ -10,29 +10,26 @@
 </head>
 <body>
     <!-- Header -->
-    <header id="header">
+    <header id="header" data-header>
         <div class="container">
-            <nav>
+            <nav data-navbar>
                 <div class="logo">Alexis Chiu</div>
-                <div class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-                    <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                
+                <!-- Hamburger Button -->
+                <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+                
+                <!-- Navigation Links -->
+                <ul class="navbar-list" data-navbar-list>
+                    <li><a href="#about" class="navbar-link" data-nav-link>About</a></li>
+                    <li><a href="#education" class="navbar-link" data-nav-link>Education</a></li>
+                    <li><a href="#experience" class="navbar-link" data-nav-link>Experience</a></li>
+                    <li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
                 </ul>
             </nav>
-
-            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-                <span class="line line-3"></span>
-              </button>
-
         </div>
     </header>
 
