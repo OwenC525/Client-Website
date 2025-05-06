@@ -9,9 +9,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
     
     :root {
-        --primary: #3498db;
-        --secondary: #2980b9;
-        --accent: #e74c3c;
+        --primary: #837aff;
+        --secondary: #2600ff;
+        --accent: #1504ac;
         --dark: #2c3e50;
         --light: #ecf0f1;
         --success: #27ae60;
@@ -464,6 +464,12 @@
         font-size: 2.5rem;
         color: rgba(52, 152, 219, 0.1);
     }
+
+    .eduLogo {
+        text-align: right;
+        height: 200px;
+        width: 200px;
+    }
     
     /* Experience Section */
     .experience {
@@ -525,6 +531,11 @@
         font-size: 2rem;
         color: var(--primary);
         margin-bottom: 15px;
+    }
+
+    .expLogo {
+        width: 225px;
+        height: 200px;
     }
 
     /* certifications Section */
