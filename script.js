@@ -31,7 +31,7 @@ navLinks.forEach(link => {
 document.addEventListener('click', (e) => {
     if (!navbar.contains(e.target) {
         closeMobileMenu();
-    }
+    })
 });
 
 // Your existing header scroll effect
